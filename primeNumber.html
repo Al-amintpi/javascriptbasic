@@ -1,0 +1,19 @@
+<input type="number" id="value" name="value">
+<button onclick="Primenumber()">click</button>
+
+<script type="text/javascript">
+
+	function Primenumber(){
+		var number =document.getElementById('value').value;
+		for (var i=2; i<number; i++) {
+			if(number%i===0){
+				console.log("prime number noi");
+				return false;
+			} 
+		}
+		console.log("Prime number hoi");
+		return true;
+	}
+	 
+	 
+</script> 

@@ -1,0 +1,19 @@
+<input type="number" id="value" name="input">
+<button>click</button>
+
+<script type="text/javascript">
+
+	function Primenumber(number){
+		for (var i=2; i<number; i++) {
+			if(number%i===0){
+				return false;
+			} 
+		}
+		return true;
+	}
+
+	var value = document.getElementById('value').value;  
+	console.log(value);
+	console.log(Primenumber(value));
+
+</script> 
