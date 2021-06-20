@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<!-- CSS FILES -->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/fonts/fonts.css">
+	  
+</head>
+<body>
+
+<div id="show">
+	
+</div>
+
 <input type="number" id="value" name="value">
 <button onclick="Primenumber()">click</button>
 
@@ -7,13 +25,16 @@
 		var number =document.getElementById('value').value;
 		for (var i=2; i<number; i++) {
 			if(number%i===0){
-				console.log("prime number noi");
-				return false;
+				document.getElementById("show").innerHTML=number+"This number is not Prime ";
 			} 
+			else if(number%i===1){
+				document.getElementById("show").innerHTML=number+"This number is Prime";
+			}
 		}
-		console.log("Prime number hoi");
-		return true;
+		 
 	}
 	 
-	 
 </script> 
+
+</body>
+</html>

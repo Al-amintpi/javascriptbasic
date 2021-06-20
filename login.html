@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="title" content="PSD to Single Page">
+	<meta name="description" content="Single page">
+	<meta name="keywords" content="Single project">
+
+	<!-- CSS FILES -->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/fonts/fonts.css">
+	 <style>
+		table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		}
+		.last-tr{
+			position: relative;
+		}
+		.plus-icon {
+			margin-left: 412px;
+			margin-top: -7px;
+	}
+</style>
+	
+</head>
+<body>
+
+<div class="row">
+	<div class="col-md-6 offset-md-3">
+		<form>
+			<h1 style="text-align: center;margin:20px 0px;">Login</h1>
+			<div style="margin-bottom: 20px;" class="form-group">
+		 		<input type="text" class="form-control" name="name" id="password">
+		 	</div>
+		 	<div style="margin-bottom: 20px;" class="form-group">
+		 		<input id="password-field" type="password" class="form-control" name="password">
+		 		<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+		 	</div>
+		 
+		 	<input type="submit" name="submit" class="btn btn-success" value="submit">
+	 	 </form>
+	</div>
+</div>
+
+<!-- End Footer section -->
+	<!-- JS FILES -->
+  	<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script type="text/javascript">
+    	 $(document).ready(function(){
+    	 	$('.toggle-password').click(function(){
+    	 		$(this).toggleClass("fa-eye fa-eye-slash");
+				  var input = $($(this).attr("toggle"));
+				  if (input.attr("type") == "password") {
+				    input.attr("type", "text");
+				  } else {
+				    input.attr("type", "password");
+				  }
+    	 	});
+    	 });
+    </script>
+</body>
+</html>

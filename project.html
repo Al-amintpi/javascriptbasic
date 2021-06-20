@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="title" content="PSD to Single Page">
+	<meta name="description" content="Single page">
+	<meta name="keywords" content="Single project">
+
+	<!-- CSS FILES -->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/fonts/fonts.css">
+	 <style>
+		table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		}
+		.last-tr{
+			position: relative;
+		}
+		.plus-icon {
+			margin-left: 412px;
+			margin-top: -7px;
+	}
+</style>
+	
+</head>
+<body>
+<table style="width:100%">
+	<thead>
+	  	<tr>
+	  		<th>address</th>
+		    <th>Lastname</th>
+		    <th>Firstname</th>
+		    <th></th>
+	  	</tr>
+  	</thead>
+	<tbody id="tbody"> 
+	  <tr>
+	    <td><input type="text" name=""></td>
+	    <td><input type="text" name=""></td>
+	     <td><input type="text" name=""></td>
+	    <td>1</td>
+	  </tr>
+	  <tr class="last-tr">
+	    <td><input type="text" name=""></td>
+	    <td><input type="text" name=""></td>
+	     <td><input type="text" name=""></td>
+	    <td>2</td>
+	  </tr>
+	</tbody>
+	
+</table>
+<div class="plus-icon">
+		<a href="#"><i class="fas fa-plus"></i></a>
+	</div>
+ 
+<!-- End Footer section -->
+	<!-- JS FILES -->
+  	<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script type="text/javascript">
+    	$('.plus-icon a').click(function(){
+    		var count = $('#tbody tr').length;
+    		var count1 = ++count;
+    		$("#tbody").append("<tr><td><input type='text' name=''></td><td><input type='text' name=''></td><td><input type='text' name=''></td><td>"+count1 +"</td></tr>");
+    		$("#tbody").append("<tr></td><td><input type='text' name=''></td><td><input type='text' name=''></td><td><input type='text' name=''></td><td>"+ ++count +"</td></tr>");
+    		console.log(count1);
+    		 
+    		return false;
+    	})
+    </script>
+</body>
+</html>

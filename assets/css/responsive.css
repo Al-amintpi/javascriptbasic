@@ -1,0 +1,264 @@
+ @media all and (min-width: 992px){
+	.banner-content hr {
+	  margin: 8px 190px;
+	}
+	.menu ul{
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+	}
+}
+
+@media all and (max-width: 991px){
+	.menu {
+		display: none;
+	}
+	.menu {
+		position: absolute;
+		top: 20%;
+		margin: 0 auto;
+		width: 80%;
+		left: 0;
+		right: 0;
+		background: #dddddddd;
+		z-index: 99;
+		border-radius: 0 0 1rem 1rem;
+	}
+
+	.menu ul {
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: start;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		background: #e1cbcb6b;
+		text-align: center;
+		position: relative;
+		z-index: 111;
+		margin-left: 1rem;
+	}
+
+	.menu ul li {
+		margin-top: 1rem;
+	}
+	.menu ul li a{
+		color:#e74c3c;
+		margin-bottom: 1rem;
+	}
+	.menu ul li a:hover{
+		 color:black;
+	}
+
+	.logo{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}	
+
+	 
+
+	.logo a i {
+		color: #FFF;
+		font-size: 2.5rem;
+		border: 1px solid #FFF;
+		border-radius: 3px;
+		padding: 5px 10px;
+	}
+
+	.logo a i:hover{
+		background: #02baab;
+	}
+
+	.menu-icon{
+		display: block;
+	}
+
+	/******** banner content **********/
+	.banner-content {
+		margin: 6rem 0;
+	}
+
+	.banner-content h1{
+		font-size: 4.2rem;
+	}
+
+	.banner-content hr {
+		margin: 9px 125px; 
+	}
+
+	.banner-text {
+		padding-bottom: 8rem;
+	}
+
+	.banner-content h2{
+		font-size: 1.8rem;
+
+	}
+
+
+	/***********form responsive*************/
+	
+	 
+
+	.sub-content h3{
+		line-height: 13px;
+		font-size: 2rem;
+	}
+
+
+	.main-overlycontent{
+		margin-top:15rem;
+	}
+	
+	.sub-content p{
+		font-size: 1.9rem;
+	}
+
+	.input-f {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		row-gap: 1rem;
+	}
+}
+
+
+@media all and (max-width: 767px){
+
+	/***** Banner content****/
+	.banner-content {
+		margin: 3rem 0;
+	}
+
+	.banner-content h1{
+		font-size: 3.7rem;
+	}
+
+	.banner-text {
+		padding-bottom: 5rem;
+	}
+
+	.banner-content hr {
+		margin: 6px 42px; 
+	}
+
+	/****single button****/
+	 
+
+	/****works responsive*****/
+	.skills-workflow {
+		margin-bottom: 3rem;
+	}
+
+	.portfolio-single-item {
+		margin-bottom: 4rem;
+	}
+
+	/***form responsive***/
+	 
+
+	/*footer icon responsive*/
+	.footer-icon ul li{
+		width:7rem;
+		height: 7rem;
+	}
+
+	.footer-icon ul li{
+		padding: 0;
+	}
+
+	.footer-icon ul li a {
+		line-height: 6rem;
+	}
+
+	.footer-icon{
+		margin: 0px 100px;
+	}
+
+	.sub-content h3{
+		line-height: 23px;
+		font-size: 3rem;
+	}
+
+	.main-overlycontent{
+		margin-top:13.6rem;
+	}
+	.menu {
+		top: 30%;
+	}
+
+
+} 
+
+
+@media all and (max-width: 575px){
+	.banner-content {
+		margin: 1.7rem 0;
+	}
+
+	.banner-content h1{
+		font-size: 2.5rem;
+	}
+
+	.banner-content h2 {
+		font-size: 1.3rem;
+	}
+
+	.banner-content hr {
+		display: none;
+	}	 
+
+	/**** Rapihel section ****/
+	.introduction-content h2 {
+		color: #6c7979;;
+		line-height: 23px;
+		margin: 0px 17px;
+		text-align: justify;
+	}
+	 
+ 	/*footer icon responsive*/
+	.footer-icon{
+		margin: 0px 20px;
+	}
+
+	.extra-class{
+	 	-webkit-box-orient: vertical;
+	 	-webkit-box-direction: normal;
+	 	    -ms-flex-direction: column;
+	 	        flex-direction: column;
+	}
+
+	.skills-workflow-area hr{
+		margin: 2rem 0;
+	}
+
+	.uptoscrollbtn {
+		right: 10px;
+	}
+
+	.contact-caption h1{
+		margin-bottom: 2rem;
+	}
+
+	.view-button.text-center{
+		margin-bottom: 2rem;
+	}
+
+	.sub-content h3 {
+		line-height: 22px;
+		font-size: 2rem;
+	}
+
+}
+
+
+ 
